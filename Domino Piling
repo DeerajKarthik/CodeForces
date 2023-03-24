@@ -1,0 +1,3 @@
+M,N=input().split()
+Ar=int(M)*int(N)
+print(Ar//2)
