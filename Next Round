@@ -1,0 +1,8 @@
+n,k=input().split()
+L=input().split()
+C=0
+for i in L:
+    if int(i)>0:
+        if int(i)>=(int(L[int(k)-1])):
+            C+=1
+print(C)
