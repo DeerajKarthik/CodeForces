@@ -1,0 +1,40 @@
+L1=input().split()
+L2=input().split()
+L3=input().split()
+L4=input().split()
+L5=input().split()
+P=[]
+for i in L1:
+    if i =='1':
+        P.append(1)
+        P.append(int(L1.index(i)+1))
+for i in L2:
+    if i =='1':
+        P.append(2)
+        P.append(int(L2.index(i)+1))
+for i in L3:
+    if i =='1':
+        P.append(3)
+        P.append(int(L3.index(i)+1))
+for i in L4:
+    if i =='1':
+        P.append(4)
+        P.append(int(L4.index(i)+1))
+for i in L5:
+    if i =='1':
+        P.append(5)
+        P.append(int(L5.index(i)+1))
+C=0
+while P[0]!=3:
+    C+=1
+    if P[0]>3:
+        P[0]=P[0]-1
+    elif P[0]<3:
+        P[0]+=1
+while P[1]!=3:
+    C+=1
+    if P[1]>3:
+        P[1]=P[1]-1
+    elif P[1]<3:
+        P[1]+=1
+print(C)
