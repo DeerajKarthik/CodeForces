@@ -1,0 +1,10 @@
+n=int(input())
+L=[]
+for i in range (n): 
+    a,b,c=(input().split())
+    if (int(a)+int(b)==int(c)):
+        L.append('+')
+    elif (int(a)-int(b)==int(c)):
+        L.append('-')
+for i in range (len(L)):
+    print(L[i])
